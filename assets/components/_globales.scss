@@ -1,0 +1,77 @@
+/*
+*Declaraciones de variables
+*/
+
+$color-primario: #AD1FFF;
+$color-oscuro: #410066;
+$color-button: #7F4BD2;
+$color-buttonHover: #602DB4;
+
+/*
+* Fuentes a usar
+*/
+@font-face{
+    font-family: 'RedRose';
+    src: url('../fonts/RedRose-Regular.ttf');
+    font-size: normal;
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: 'Sriracha';
+    src: url('../fonts/Sriracha-Regular.ttf');
+    font-size: normal;
+    font-weight: normal;
+}
+
+@font-face{
+    font-family: 'AnticSlab';
+    src: url('../fonts/AnticSlab-Regular.ttf');
+    font-size: normal;
+    font-weight: normal;
+
+}
+//*Configuraciones Globales*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: 'RedRose';
+    font-size: 25px;
+    text-transform: uppercase;
+}
+
+h2,h3{
+    font-family: 'Sriracha';
+    font-size: 20px;
+    text-transform: uppercase;
+}
+p, label{
+    font-family:'AnticSlab';
+    font-size: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+@function get-opacity($color, $nivel){
+    @return rgba($color, $nivel);
+}
+
+
+.title{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: 25px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #cccccc;
+    color: get-opacity(black, 0.5);
+}
+
+

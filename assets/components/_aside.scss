@@ -1,0 +1,43 @@
+.aside-container{
+    display: grid;
+    grid-template-rows: 25% 25%;
+
+    .aside-content{
+        width: 100%;
+        margin-top: 50px;
+    }
+    .aside-content  input[type=text]{
+        width: 100%;
+        height: 30px;
+        padding-left: 25px;
+        font-size: 20px;
+        border-top: none;
+        border-left: none;
+        border-right:none;
+        border-bottom: 2px solid get-opacity($color-oscuro, 0.1);
+        cursor: text;
+        transition: all 100ms;
+    }
+
+    .aside-content  input[type=text]:hover{
+       
+        border-bottom: 1px solid $color-oscuro;  
+    }
+
+    .aside-content button{
+        width: 100px;
+        height: 45px;
+        margin-top: 15px;
+        margin-left: 15px;
+        font-size: 15px;
+        cursor: pointer;
+        border-radius: 60px;
+        background-color: $color-button;
+        color:white;
+        transition: all 100ms;
+    }
+
+    .aside-content button:hover{
+        background-color: $color-buttonHover;
+    }
+}
